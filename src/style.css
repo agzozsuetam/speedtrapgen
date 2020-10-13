@@ -1,0 +1,45 @@
+body {
+    background: rgb(55,55,55);
+    background: linear-gradient(90deg, rgba(55,55,55,1) 0%, rgba(24,39,74,1) 39%, rgba(50,50,50,1) 100%)
+}
+
+#root {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    font-family: 'VT323', bold
+}
+
+#picGen {
+    margin: 0;
+    padding: 0;
+    grid-area: 1 / 2 / 2 / 5
+}
+
+#frm {
+    width:30vw;
+    grid-area: 1 / 1 / 2 / 2;
+    max-width:200px
+}
+
+.typeIn {
+    float:left;
+    width:80%;
+    padding: 5px;
+}
+
+label[class="typeIn"] {
+    color: white;
+    font-variant: small-caps
+}
+
+button {
+    width:80px;
+    height: 30px;
+    float:left;
+    width:90%;
+    padding: 5px;
+    background-color:rgba(24,39,74,1);
+    color:white
+}
